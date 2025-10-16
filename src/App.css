@@ -3,10 +3,16 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  position: sticky;
 }
 
 img{
   height: 12rem;
+  transition: 0.15s;
+}
+
+img:active{
+  height: 18rem;
 }
 
 .logo {

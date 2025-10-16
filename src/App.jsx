@@ -8,11 +8,9 @@ function App() {
 
   return (
     <>
-    <Header/>
-      <div>
-        <ClickerGame/>
-      </div>
-    <Footer/>
+      <Header class = "header"/>
+      <ClickerGame/>
+      <Footer class = "footer"/>
     </>
   )
 }
