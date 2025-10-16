@@ -14,20 +14,23 @@ export default function ClickerGame(){
         if(count > cost){
             SetMultiplier((multiplier) => multiplier + 1)
             increaseCost()
+            setCount((count => count - cost))
         }
     }
 
     function increaseCost(){
-        SetCost((cost => Math.floor(cost * (multiplier * 1.05 * 1.05))))
+        SetCost((cost => Math.floor(cost * (multiplier * 1.05))))
     }
 
     return(
         <div className="cookieHolder">
-            <button id = "clickerButton" class = "playButton" onClick={increaseCount}>
-            <img src = {cookieImage}/>
-            </button>
+            <div id = "cookie">
+                <button id = "clickerButton" className = "playButton" onClick={increaseCount}>
+                <img src = {cookieImage}/>
+                </button>
+            </div>
             <p>Total Cookies: {count}</p>
-            <button id = "multiplierButton" class = "playButton" onClick={increaseMultiplier}>
+            <button id = "multiplierButton" className = "playButton" onClick={increaseMultiplier}>
             <p>Cost to upgrade: {cost}</p>
             </button>
         </div>

@@ -1,4 +1,3 @@
-import viteLogo from '/vite.svg'
 import ClickerGame from './components/clickerGame.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
@@ -8,9 +7,9 @@ function App() {
 
   return (
     <>
-      <Header class = "header"/>
+      <Header className = "header"/>
       <ClickerGame/>
-      <Footer class = "footer"/>
+      <Footer className = "footer"/>
     </>
   )
 }
