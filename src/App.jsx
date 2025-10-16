@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import viteLogo from '/vite.svg'
+import ClickerGame from './components/clickerGame.jsx'
 import './App.css'
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <div>
+        <ClickerGame/>
       </div>
     </>
   )
