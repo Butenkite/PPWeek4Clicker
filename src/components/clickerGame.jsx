@@ -28,8 +28,8 @@ export default function ClickerGame(){
     return(
         <div className="cookieHolder">
             <CookieButton onClick={increaseCount} />
-            <CookieCounter count = {increaseMultiplier} />
-            <UpgradeButton  onClick = {increaseCost} />
+            <CookieCounter count = {count} />
+            <UpgradeButton  cost={cost} onClick={increaseMultiplier} />
         </div>
     )
 }
