@@ -22,13 +22,17 @@ img:active{
   transition: filter 300ms;
 }
 
-@keyframes logo-spin {
+@keyframes cookie-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+.cookie-spin {
+  animation: cookie-spin infinite 3s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -47,4 +51,7 @@ img:active{
 
 #multiplierButton{
   color: white;
+  background-color: #333;
+  border: 3px;
+  border-radius: 10px;
 }

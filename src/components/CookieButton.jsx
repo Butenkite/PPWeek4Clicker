@@ -4,7 +4,7 @@ export default function CookieButton({ onClick }){
     return(
         <div id="cookie">
             <button id="clickerButton" className="playButton" onClick={onClick}>
-                <img src={CookieImage} alt="cookie" />
+                <img src={CookieImage} alt="cookie" className="cookie-spin"/>
             </button>
         </div>
     )
