@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://Butenkite.github.io/PPWeek4Clicker/",
+  "homepage": "https://Butenkite.github.io/PPWeek4Clicker",
   "dependencies": {
     "dist": "^0.1.2",
     "react": "^19.1.1",
