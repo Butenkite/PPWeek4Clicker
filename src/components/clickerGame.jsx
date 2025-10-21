@@ -1,5 +1,8 @@
 import React from "react";
-import cookieImage from '../assets/cookie.png'
+import CookieImage from '../assets/cookie.png'
+import CookieButton from "./CookieButton";
+import CookieCounter from "./CookieCounter";
+import UpgradeButton from "./UpgradeButton";
 
 export default function ClickerGame(){
     let [count, setCount] = React.useState(0);
@@ -24,15 +27,9 @@ export default function ClickerGame(){
 
     return(
         <div className="cookieHolder">
-            <div id = "cookie">
-                <button id = "clickerButton" className = "playButton" onClick={increaseCount}>
-                <img src = {cookieImage}/>
-                </button>
-            </div>
-            <p>Total Cookies: {count}</p>
-            <button id = "multiplierButton" className = "playButton" onClick={increaseMultiplier}>
-            <p>Cost to upgrade: {cost}</p>
-            </button>
+            <CookieButton onClick={increaseCount} />
+            <CookieCounter count = {increaseMultiplier} />
+            <UpgradeButton  onClick = {increaseCost} />
         </div>
     )
 }
