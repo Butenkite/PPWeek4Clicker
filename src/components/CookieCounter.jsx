@@ -1,5 +1,5 @@
 
 export default function CookieCounter({ count }) {
     
-    return <p>cookie Cookies: {count} </p>;
+    return <p>Cookies: {count} </p>;
 }
