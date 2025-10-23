@@ -5,12 +5,12 @@ import CookieCounter from "./CookieCounter";
 import UpgradeButton from "./UpgradeButton";
 
 export default function ClickerGame(){
-    let [count, setCount] = React.useState(0);
+    let [count, setCounter] = React.useState(0);
     let [multiplier, SetMultiplier] = React.useState(1);
     let [cost, SetCost] = React.useState(15);
 
     function increaseCount(){
-        setCount((count) => count + multiplier)
+        setCount((cost) => count - multiplier)
     }
 
     function increaseMultiplier(){
@@ -29,7 +29,7 @@ export default function ClickerGame(){
         <div className="cookieHolder">
             <CookieButton onClick={increaseCount} />
             <CookieCounter count = {count} />
-            <UpgradeButton  cost={cost} onClick={increaseMultiplier} />
+            <UpgradeButton  cost={multiplier}/>
         </div>
     )
 }
